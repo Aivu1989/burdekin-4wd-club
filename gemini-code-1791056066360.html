@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burdekin District 4 Wheel Drive Club Inc.</title>
+  <title>Burdekin District 4 Wheel Drive Club Inc. | Ayr, North Queensland</title>
+  <meta name="description" content="Burdekin District 4 Wheel Drive Club Inc. (Ayr, QLD): four-wheel driving, camping and social trips across the Burdekin and North Queensland. Meetings 7:30 PM on the first Tuesday of the month at the Burdekin Neighbourhood Centre, Ayr.">
+  <meta name="theme-color" content="#c25e19">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Burdekin District 4 Wheel Drive Club Inc.">
+  <meta property="og:title" content="Burdekin District 4 Wheel Drive Club Inc.">
+  <meta property="og:description" content="Bush tracks, river crossings and good mates. Four-wheel driving, camping and social trips from Ayr across North Queensland.">
+  <meta property="og:locale" content="en_AU">
+  <!-- TODO once the site has a web address: add <meta property="og:url" content="https://..."> and an og:image (e.g. photos/og-image.jpg, 1200x630) -->
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c25e19'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='white' text-anchor='middle'%3E4WD%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -41,11 +51,11 @@
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span><strong>Next General Meeting:</strong> 1st Tuesday of the Month &bull; 7:30 PM at Burdekin Neighbourhood Centre, Ayr</span>
+        <span><strong>General Meetings:</strong> 1st Tuesday of the Month &bull; 7:30 PM at Burdekin Neighbourhood Centre, Ayr</span>
       </div>
       <div class="flex items-center gap-4 text-stone-400">
-        <span><i class="fa-solid fa-certificate text-orange-400 mr-1"></i> Inc. #IA17459</span>
-        <span><i class="fa-solid fa-shield text-emerald-400 mr-1"></i> Affiliated with 4WD QLD</span>
+        <span><i class="fa-solid fa-certificate text-orange-400 mr-1" aria-hidden="true"></i> Inc. #IA17459</span>
+        <span><i class="fa-solid fa-shield text-emerald-400 mr-1" aria-hidden="true"></i> Affiliated with 4WD QLD</span>
       </div>
     </div>
   </aside>
@@ -53,9 +63,9 @@
   <!-- NAVBAR -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 group">
+      <a href="#" class="flex items-center gap-3 group" aria-label="Burdekin District 4 Wheel Drive Club - back to top">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-ochre to-brand-ochredark flex items-center justify-center text-white shadow-md shadow-orange-900/20 group-hover:scale-105 transition-transform">
-          <i class="fa-solid fa-truck-monster text-2xl"></i>
+          <i class="fa-solid fa-truck-monster text-2xl" aria-hidden="true"></i>
         </div>
         <div>
           <span class="font-display font-bold text-lg sm:text-xl text-stone-900 tracking-tight block leading-tight">BURDEKIN DISTRICT</span>
@@ -63,30 +73,34 @@
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-stone-600">
+      <nav aria-label="Main" class="hidden lg:flex items-center gap-6 font-medium text-sm text-stone-600">
         <a href="#about" class="hover:text-brand-ochre transition">About Club</a>
+        <a href="#events" class="hover:text-brand-ochre transition">Events</a>
         <a href="#trips" class="hover:text-brand-ochre transition">Trips & Tracks</a>
+        <a href="#gallery" class="hover:text-brand-ochre transition">Photos</a>
         <a href="#almanac" class="hover:text-brand-ochre text-brand-river font-semibold flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-fish-fins text-cyan-600"></i> Fishing Almanac
+          <i class="fa-solid fa-fish-fins text-cyan-600" aria-hidden="true"></i> Fishing Almanac
         </a>
-        <a href="#resources" class="hover:text-brand-ochre transition">External Links</a>
-        <a href="#membership" class="hover:text-brand-ochre transition">Membership Fees</a>
+        <a href="#resources" class="hover:text-brand-ochre transition">Useful Links</a>
+        <a href="#membership" class="hover:text-brand-ochre transition">Membership</a>
         <a href="#prep" class="hover:text-brand-ochre transition">Trip Checklist</a>
         <a href="#contact" class="px-4 py-2 rounded-lg bg-brand-ochre text-white font-semibold hover:bg-brand-ochredark transition shadow-sm">Get in Touch</a>
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100">
-        <i class="fa-solid fa-bars text-xl"></i>
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-controls="mobileMenu" aria-expanded="false" class="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100">
+        <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
       </button>
     </div>
 
     <!-- Mobile Dropdown -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-stone-200 px-4 pt-2 pb-6 space-y-3">
       <a href="#about" class="block py-2 text-stone-700 font-medium">About Club</a>
+      <a href="#events" class="block py-2 text-stone-700 font-medium">Upcoming Events</a>
       <a href="#trips" class="block py-2 text-stone-700 font-medium">Trips & Tracks</a>
-      <a href="#almanac" class="block py-2 text-cyan-700 font-semibold"><i class="fa-solid fa-fish-fins mr-2"></i> Fishing Almanac</a>
-      <a href="#resources" class="block py-2 text-stone-700 font-medium">External Links</a>
+      <a href="#gallery" class="block py-2 text-stone-700 font-medium">Trip Photos</a>
+      <a href="#almanac" class="block py-2 text-cyan-700 font-semibold"><i class="fa-solid fa-fish-fins mr-2" aria-hidden="true"></i> Fishing Almanac</a>
+      <a href="#resources" class="block py-2 text-stone-700 font-medium">Useful Links</a>
       <a href="#membership" class="block py-2 text-stone-700 font-medium">Membership Fees</a>
       <a href="#prep" class="block py-2 text-stone-700 font-medium">Trip Checklist</a>
       <a href="#contact" class="block py-2 text-brand-ochre font-semibold">Get in Touch</a>
@@ -100,7 +114,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-ochre/20 text-orange-400 text-xs font-semibold mb-6 border border-brand-ochre/30">
-          <i class="fa-solid fa-compass"></i> Exploring Ayr, Townsville & Beyond
+          <i class="fa-solid fa-compass" aria-hidden="true"></i> Exploring Ayr, Townsville & Beyond
         </div>
         <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
           Bush Tracks, River Crossings & Good Mates.
@@ -111,10 +125,10 @@
         <div class="mt-8 flex flex-wrap gap-4">
           <a href="#trips" class="px-6 py-3.5 rounded-xl bg-brand-ochre hover:bg-brand-ochredark text-white font-semibold transition flex items-center gap-2 shadow-lg shadow-orange-950/40">
             <span>Explore Trip Itineraries</span>
-            <i class="fa-solid fa-arrow-down text-sm"></i>
+            <i class="fa-solid fa-arrow-down text-sm" aria-hidden="true"></i>
           </a>
           <a href="#almanac" class="px-6 py-3.5 rounded-xl bg-stone-800/90 hover:bg-stone-700 text-white font-semibold border border-stone-700 transition flex items-center gap-2">
-            <i class="fa-solid fa-fish-fins text-cyan-400"></i>
+            <i class="fa-solid fa-fish-fins text-cyan-400" aria-hidden="true"></i>
             <span>Local Fishing Almanac</span>
           </a>
         </div>
@@ -127,7 +141,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="flex items-start gap-4">
         <div class="w-12 h-12 rounded-lg bg-orange-100 text-brand-ochre flex items-center justify-center shrink-0">
-          <i class="fa-regular fa-calendar-check text-xl"></i>
+          <i class="fa-regular fa-calendar-check text-xl" aria-hidden="true"></i>
         </div>
         <div>
           <h2 class="font-bold text-stone-900 text-base">Monthly Meetings</h2>
@@ -136,7 +150,7 @@
       </div>
       <div class="flex items-start gap-4">
         <div class="w-12 h-12 rounded-lg bg-emerald-100 text-brand-bush flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-location-dot text-xl"></i>
+          <i class="fa-solid fa-location-dot text-xl" aria-hidden="true"></i>
         </div>
         <div>
           <h2 class="font-bold text-stone-900 text-base">Club Meeting Place</h2>
@@ -145,7 +159,7 @@
       </div>
       <div class="flex items-start gap-4">
         <div class="w-12 h-12 rounded-lg bg-cyan-100 text-cyan-800 flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-users text-xl"></i>
+          <i class="fa-solid fa-users text-xl" aria-hidden="true"></i>
         </div>
         <div>
           <h2 class="font-bold text-stone-900 text-base">Family & Driver Friendly</h2>
@@ -161,11 +175,11 @@
       <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
         <div>
           <div class="inline-flex items-center gap-2 text-cyan-800 font-bold text-sm tracking-wider uppercase mb-2">
-            <i class="fa-solid fa-fish"></i> Burdekin & Townsville Coastal Waters
+            <i class="fa-solid fa-fish" aria-hidden="true"></i> Burdekin & Townsville Coastal Waters
           </div>
           <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900">Regional Fishing & Solunar Almanac</h2>
           <p class="mt-3 text-stone-600 max-w-2xl text-base leading-relaxed">
-            Planning a run up Alva Beach, Groper Creek, Cape Upstart or around Townsville's Cleveland Bay? Check regional target species, bite windows, tides, and seasonal regulations before packing the rods.
+            Planning a run up Alva Beach, Groper Creek, Cape Upstart or around Townsville's Cleveland Bay? Check regional target species, sun and moon times, tides, and seasonal regulations before packing the rods.
           </p>
         </div>
         
@@ -179,43 +193,42 @@
         </div>
       </div>
 
-      <!-- Almanac Quick Live Solunar Banner -->
+      <!-- Almanac: Sun & Moon for Ayr (calculated in your browser, no live feed) -->
       <div class="bg-white rounded-2xl p-6 border border-cyan-100 shadow-sm mb-10 grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
         <div class="md:col-span-1 border-b md:border-b-0 md:border-r border-stone-200 pb-4 md:pb-0 md:pr-4">
-          <span class="text-xs uppercase font-bold text-stone-500 tracking-wider">Solunar Bite Rating</span>
+          <span class="text-xs uppercase font-bold text-stone-500 tracking-wider">Moon Phase Today</span>
           <div class="flex items-center gap-2 mt-2">
-            <span class="text-3xl font-display font-black text-emerald-600">VERY HIGH</span>
-            <span class="flex text-amber-400 text-sm">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star-half-stroke"></i>
-            </span>
+            <span id="moonIcon" class="text-3xl" aria-hidden="true">&#127765;</span>
+            <span id="moonName" class="text-xl font-display font-bold text-stone-900">Calculating&hellip;</span>
           </div>
-          <p class="text-xs text-stone-500 mt-1">Prime moon phase activity & strong tidal movements.</p>
+          <p id="moonDetail" class="text-xs text-stone-500 mt-1">&nbsp;</p>
         </div>
 
         <div class="space-y-1">
-          <span class="text-xs font-semibold text-stone-500 uppercase tracking-wider block">Best Bite Periods</span>
-          <p class="text-stone-900 font-bold text-sm"><i class="fa-regular fa-clock text-cyan-700 mr-1.5"></i> Dawn: 5:15 AM – 7:30 AM</p>
-          <p class="text-stone-900 font-bold text-sm"><i class="fa-regular fa-clock text-cyan-700 mr-1.5"></i> Dusk / Run-out: 5:45 PM – 8:00 PM</p>
+          <span class="text-xs font-semibold text-stone-500 uppercase tracking-wider block">Sun Times, Ayr (AEST)</span>
+          <p class="text-stone-900 font-bold text-sm"><i class="fa-solid fa-sun text-amber-500 mr-1.5" aria-hidden="true"></i> Sunrise: <span id="sunriseTime">&ndash;</span></p>
+          <p class="text-stone-900 font-bold text-sm"><i class="fa-solid fa-moon text-cyan-700 mr-1.5" aria-hidden="true"></i> Sunset: <span id="sunsetTime">&ndash;</span></p>
+          <p class="text-xs text-stone-500">Dawn and dusk are traditionally good fishing windows.</p>
         </div>
 
         <div class="space-y-1">
-          <span class="text-xs font-semibold text-stone-500 uppercase tracking-wider block">Key Tide Focus</span>
-          <p class="text-stone-900 font-bold text-sm">First 2 hrs of the run-in tide</p>
-          <p class="text-xs text-stone-500">Target drains and gutter drop-offs in estuaries.</p>
+          <span class="text-xs font-semibold text-stone-500 uppercase tracking-wider block">Tides: Check Before You Go</span>
+          <p class="text-stone-900 font-bold text-sm">We don't show live tides here</p>
+          <p class="text-xs text-stone-500">Use the official MSQ / Bureau of Meteorology tide tables for Townsville &amp; Cape Bowling Green, and check beach access times before driving on sand.</p>
         </div>
 
         <div class="flex flex-col gap-2">
           <a href="https://www.msq.qld.gov.au/Tides/Tide-tables" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-lg bg-cyan-800 text-white hover:bg-cyan-900 transition shadow-sm">
-            <i class="fa-solid fa-water"></i> MSQ Official Tide Tables
+            <i class="fa-solid fa-water" aria-hidden="true"></i> MSQ Official Tide Tables
+          </a>
+          <a href="https://www.bom.gov.au/australia/tides/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-lg bg-stone-100 text-stone-700 hover:bg-stone-200 transition">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i> BOM Tide Predictions
           </a>
           <a href="https://www.seabreeze.com.au/weather/tides/today/alva-beach-qld" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-lg bg-stone-100 text-stone-700 hover:bg-stone-200 transition">
-            <i class="fa-solid fa-chart-line"></i> Alva Live Weather & Tides
+            <i class="fa-solid fa-wind" aria-hidden="true"></i> Alva Beach Tides (Seabreeze)
           </a>
         </div>
+        <p class="md:col-span-4 text-[11px] text-stone-400 border-t border-stone-100 pt-3">Sun and moon times are calculated in your browser for Ayr (19.57&deg;S, 147.40&deg;E, AEST) and are approximate (within a few minutes). They are a guide only, not a bite forecast.</p>
       </div>
 
       <!-- Hotspot Cards Grid -->
@@ -226,7 +239,7 @@
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-blue-50 text-blue-800">Burdekin Coast</span>
-              <span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-truck-pickup mr-1"></i> Beach 4WD Permitted</span>
+              <span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-truck-pickup mr-1" aria-hidden="true"></i> Beach 4WD Permitted</span>
             </div>
             <h3 class="font-display font-bold text-xl text-stone-900">Alva Beach & Gutter Network</h3>
             <p class="text-stone-600 text-sm mt-2 leading-relaxed">
@@ -244,7 +257,7 @@
             </div>
           </div>
           <div class="mt-5 pt-3">
-            <span class="text-xs font-bold text-cyan-800"><i class="fa-solid fa-circle-info mr-1"></i> Beware of soft sand banks near creek outlets.</span>
+            <span class="text-xs font-bold text-cyan-800"><i class="fa-solid fa-circle-info mr-1" aria-hidden="true"></i> Beware of soft sand banks near creek outlets.</span>
           </div>
         </article>
 
@@ -253,7 +266,7 @@
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-orange-50 text-brand-ochre">Estuary & Mangroves</span>
-              <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-anchor mr-1"></i> Boat Ramp & Shore Access</span>
+              <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-anchor mr-1" aria-hidden="true"></i> Boat Ramp & Shore Access</span>
             </div>
             <h3 class="font-display font-bold text-xl text-stone-900">Groper Creek & River Mouth</h3>
             <p class="text-stone-600 text-sm mt-2 leading-relaxed">
@@ -271,7 +284,7 @@
             </div>
           </div>
           <div class="mt-5 pt-3">
-            <span class="text-xs font-bold text-amber-700"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Croc country — always stay well back from banks.</span>
+            <span class="text-xs font-bold text-amber-700"><i class="fa-solid fa-triangle-exclamation mr-1" aria-hidden="true"></i> Croc country — always stay well back from banks.</span>
           </div>
         </article>
 
@@ -280,7 +293,7 @@
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-emerald-50 text-brand-bush">National Park Headland</span>
-              <span class="text-xs font-bold text-brand-ochre"><i class="fa-solid fa-mountain mr-1"></i> 4WD Tracks / Boating</span>
+              <span class="text-xs font-bold text-brand-ochre"><i class="fa-solid fa-mountain mr-1" aria-hidden="true"></i> 4WD Tracks / Boating</span>
             </div>
             <h3 class="font-display font-bold text-xl text-stone-900">Cape Upstart National Park</h3>
             <p class="text-stone-600 text-sm mt-2 leading-relaxed">
@@ -298,7 +311,7 @@
             </div>
           </div>
           <div class="mt-5 pt-3">
-            <span class="text-xs font-bold text-cyan-800"><i class="fa-solid fa-campground mr-1"></i> Remote bush camping permits required via QPWS.</span>
+            <span class="text-xs font-bold text-cyan-800"><i class="fa-solid fa-campground mr-1" aria-hidden="true"></i> Remote bush camping permits required via QPWS.</span>
           </div>
         </article>
 
@@ -307,7 +320,7 @@
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-stone-100 text-stone-700">Townsville Inshore</span>
-              <span class="text-xs font-bold text-blue-600"><i class="fa-solid fa-water mr-1"></i> Estuary & Weirs</span>
+              <span class="text-xs font-bold text-blue-600"><i class="fa-solid fa-water mr-1" aria-hidden="true"></i> Estuary & Weirs</span>
             </div>
             <h3 class="font-display font-bold text-xl text-stone-900">Ross River & Estuary Rockwalls</h3>
             <p class="text-stone-600 text-sm mt-2 leading-relaxed">
@@ -325,7 +338,7 @@
             </div>
           </div>
           <div class="mt-5 pt-3">
-            <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-life-ring mr-1"></i> Check designated weir safety and exclusion zones.</span>
+            <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-life-ring mr-1" aria-hidden="true"></i> Check designated weir safety and exclusion zones.</span>
           </div>
         </article>
 
@@ -334,7 +347,7 @@
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-amber-50 text-amber-800">Burdekin Estuary</span>
-              <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-compass mr-1"></i> Tidal Channel</span>
+              <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-compass mr-1" aria-hidden="true"></i> Tidal Channel</span>
             </div>
             <h3 class="font-display font-bold text-xl text-stone-900">Plantation Creek</h3>
             <p class="text-stone-600 text-sm mt-2 leading-relaxed">
@@ -352,7 +365,7 @@
             </div>
           </div>
           <div class="mt-5 pt-3">
-            <span class="text-xs font-bold text-cyan-800"><i class="fa-solid fa-route mr-1"></i> Sandbars shift rapidly after wet season rains.</span>
+            <span class="text-xs font-bold text-cyan-800"><i class="fa-solid fa-route mr-1" aria-hidden="true"></i> Sandbars shift rapidly after wet season rains.</span>
           </div>
         </article>
 
@@ -361,7 +374,7 @@
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-teal-50 text-teal-800">Wetland Preserve</span>
-              <span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-tree mr-1"></i> RAMSAR Listed</span>
+              <span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-tree mr-1" aria-hidden="true"></i> RAMSAR Listed</span>
             </div>
             <h3 class="font-display font-bold text-xl text-stone-900">Bowling Green Bay National Park</h3>
             <p class="text-stone-600 text-sm mt-2 leading-relaxed">
@@ -379,7 +392,7 @@
             </div>
           </div>
           <div class="mt-5 pt-3">
-            <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Saltpan crossings bog easily when wet.</span>
+            <span class="text-xs font-bold text-stone-600"><i class="fa-solid fa-triangle-exclamation mr-1" aria-hidden="true"></i> Saltpan crossings bog easily when wet.</span>
           </div>
         </article>
 
@@ -388,14 +401,63 @@
       <!-- Fisheries Regulations & Rules Notice -->
       <div class="mt-10 bg-amber-50 rounded-2xl p-5 border border-amber-200 text-amber-900 text-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div class="flex items-start gap-3">
-          <i class="fa-solid fa-scale-balanced text-xl text-amber-700 shrink-0 mt-0.5"></i>
+          <i class="fa-solid fa-scale-balanced text-xl text-amber-700 shrink-0 mt-0.5" aria-hidden="true"></i>
           <div>
-            <span class="font-bold">Queensland Fisheries Regulations:</span> East Coast Barramundi closed season applies annually from midday 1 November to midday 1 February. Mud crab bag limit is 7 per person (males only, minimum carapace width 15cm).
+            <span class="font-bold">Queensland Fisheries Regulations:</span> East Coast Barramundi closed season applies annually from midday 1 November to midday 1 February. Mud crab possession limit is 7 per person (males only, minimum carapace width 15cm). Rules change, so always check the official rules before you go.
           </div>
         </div>
-        <a href="https://www.daf.qld.gov.au/business-priorities/fisheries/recreational" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-amber-700 hover:bg-amber-800 text-white font-semibold text-xs whitespace-nowrap transition">
+        <a href="https://www.qld.gov.au/recreation/activities/boating-fishing/rec-fishing/rules" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-amber-700 hover:bg-amber-800 text-white font-semibold text-xs whitespace-nowrap transition">
           View QLD Fisheries Rules
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS -->
+  <section id="events" class="py-20 bg-stone-100 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brand-ochre font-bold text-sm tracking-wider uppercase">What's On</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Upcoming Trips & Events</h2>
+        <p class="text-stone-600 mt-3 text-base">Club runs, camps and social days. Trip details are confirmed at the monthly meeting. Members, please RSVP to the trip leader.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Regular monthly meeting (known) -->
+        <article class="bg-white rounded-2xl p-6 border border-brand-ochre/40 shadow-sm">
+          <div class="flex items-center justify-between text-xs font-semibold mb-3">
+            <span class="px-2.5 py-1 rounded-md bg-orange-100 text-brand-ochredark">Every Month</span>
+            <span class="text-stone-500"><i class="fa-regular fa-clock mr-1" aria-hidden="true"></i>7:30 PM</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-stone-900">General Meeting</h3>
+          <p class="text-sm text-stone-600 mt-2">First Tuesday of the month, Sandhill&rsquo;s Room, Burdekin Neighbourhood Centre, 40 Chippendale St, Ayr. New members and visitors welcome.</p>
+          <p class="text-xs font-semibold text-stone-700 mt-3">Next meeting: <span id="nextMeetingDate">first Tuesday of next month</span></p>
+          <p class="text-[11px] text-stone-400 mt-1">Date worked out automatically. Check with the club around holidays.</p>
+        </article>
+
+        <!--
+          TRIP / EVENT PLACEHOLDERS: replace the text in [square brackets] with real details,
+          copy a whole <article> block to add another event, or delete ones you don't need.
+        -->
+        <article class="bg-white rounded-2xl p-6 border border-dashed border-stone-300">
+          <div class="flex items-center justify-between text-xs font-semibold mb-3">
+            <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800">Club Trip</span>
+            <span class="text-stone-500">[Date to be confirmed]</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-stone-900">[Trip name to be confirmed]</h3>
+          <p class="text-sm text-stone-600 mt-2">[Destination, meeting point, departure time and difficulty to be confirmed.]</p>
+          <p class="text-xs text-stone-500 mt-3">Trip leader: [To be confirmed] &bull; RSVP by: [To be confirmed]</p>
+        </article>
+
+        <article class="bg-white rounded-2xl p-6 border border-dashed border-stone-300">
+          <div class="flex items-center justify-between text-xs font-semibold mb-3">
+            <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-800">Social / Camp</span>
+            <span class="text-stone-500">[Date to be confirmed]</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-stone-900">[Event name to be confirmed]</h3>
+          <p class="text-sm text-stone-600 mt-2">[Details to be confirmed, e.g. day outing, BBQ, camp oven weekend or AGM.]</p>
+          <p class="text-xs text-stone-500 mt-3">Contact: [To be confirmed]</p>
+        </article>
       </div>
     </div>
   </section>
@@ -423,9 +485,9 @@
               Heading through the Tablelands via Herberton Wild River, exploring the Mount Mulligan monolith, followed by Blencoe Falls and down Kirrama Range to Cardwell.
             </p>
             <ul class="text-xs text-stone-600 space-y-1.5 mb-6">
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Historic Herberton & Dimbulah fuel stops</li>
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Blencoe Falls & Meunga Creek camp</li>
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Low-range clearance required</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Historic Herberton & Dimbulah fuel stops</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Blencoe Falls & Meunga Creek camp</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Low-range clearance required</li>
             </ul>
           </div>
           <button onclick="openTripModal('mulligan')" class="w-full py-2.5 rounded-lg border border-stone-300 font-semibold text-xs text-stone-700 hover:bg-stone-200 transition">
@@ -445,9 +507,9 @@
               Our iconic Easter gathering at Deep Creek Vietnam Veterans Retreat. Shared evening tables, camp oven damper cook-off, happy hour smokos, and fireside fellowship.
             </p>
             <ul class="text-xs text-stone-600 space-y-1.5 mb-6">
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Camp Oven Perpetual Trophy event</li>
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> 12V shared lighting & camp setups</li>
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Family-friendly retreat camping</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Camp Oven Perpetual Trophy event</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> 12V shared lighting & camp setups</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Family-friendly retreat camping</li>
             </ul>
           </div>
           <button onclick="openTripModal('deepcreek')" class="w-full py-2.5 rounded-lg border border-stone-300 font-semibold text-xs text-stone-700 hover:bg-stone-200 transition">
@@ -467,9 +529,9 @@
               Camped at the old Hidden Valley cricket grounds, tackling the maintenance tracks through to Mount Fox. Genuine North Queensland hill climbs and creek beds.
             </p>
             <ul class="text-xs text-stone-600 space-y-1.5 mb-6">
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Ergon power line track challenges</li>
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Hidden Valley & Michael's Creek</li>
-              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5"></i> Recovery gear & vehicle spares essential</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Ergon power line track challenges</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Hidden Valley & Michael's Creek</li>
+              <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Recovery gear & vehicle spares essential</li>
             </ul>
           </div>
           <button onclick="openTripModal('hiddenvalley')" class="w-full py-2.5 rounded-lg border border-stone-300 font-semibold text-xs text-stone-700 hover:bg-stone-200 transition">
@@ -481,13 +543,92 @@
     </div>
   </section>
 
+  <!-- TRIP PHOTOS GALLERY (static: edit the TRIP_PHOTOS list in the script near the bottom of this file) -->
+  <section id="gallery" class="py-20 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brand-ochre font-bold text-sm tracking-wider uppercase">From the Tracks</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Trip Photos</h2>
+        <p class="text-stone-600 mt-3 text-base">Snaps from club runs, camps and cook-ups.</p>
+      </div>
+
+      <div id="photoGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- Share your photos call to action -->
+      <div class="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <div class="md:col-span-2">
+          <h3 class="font-display font-bold text-2xl text-stone-900 flex items-center gap-2"><i class="fa-solid fa-camera text-brand-ochre" aria-hidden="true"></i> Share your trip photos</h3>
+          <p class="text-sm text-stone-600 mt-2">Been on a club trip? Email or text your best photos and we'll add them to the gallery. Please include:</p>
+          <ul class="text-sm text-stone-600 mt-2 space-y-1">
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> The trip name</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> The date (roughly is fine)</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Who's in the photos, so we can caption them</li>
+          </ul>
+          <p class="text-xs text-stone-500 mt-3"><i class="fa-solid fa-user-shield mr-1" aria-hidden="true"></i> Please only send photos you took, and check that the people in them (and parents of any kids) are happy for them to go on the club website. Ask us any time and we'll take a photo down.</p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <a id="photoEmailLink" href="mailto:gazwmallett@gmail.com" class="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-ochre hover:bg-brand-ochredark text-white font-semibold text-sm transition">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email your photos
+          </a>
+          <a id="photoSmsLink" href="sms:+61433055683" class="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-semibold text-sm transition">
+            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Text photos to <span id="photoSmsNumber">0433 055 683</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIP CHECKLIST & RECOVERY BASICS (nav link #prep) -->
+  <section id="prep" class="py-20 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brand-ochre font-bold text-sm tracking-wider uppercase">Be Prepared</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Trip Checklist & Recovery Basics</h2>
+        <p class="text-stone-600 mt-3 text-base">A general guide for club trips. Trip leaders may set extra requirements for each run.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <h3 class="font-bold text-stone-900 text-lg mb-3"><i class="fa-solid fa-clipboard-check text-brand-ochre mr-2" aria-hidden="true"></i>Before You Leave</h3>
+          <ul class="text-sm text-stone-600 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Tell someone your route and when you'll be back</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Check road conditions, park alerts, weather and tides</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Book camping and vehicle access permits</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Fluids, tyres (incl. spare), battery and brakes checked</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Fuel for the distance plus a reserve</li>
+          </ul>
+        </div>
+        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <h3 class="font-bold text-stone-900 text-lg mb-3"><i class="fa-solid fa-toolbox text-brand-ochre mr-2" aria-hidden="true"></i>Pack the Essentials</h3>
+          <ul class="text-sm text-stone-600 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> UHF radio (convoy channel set by the trip leader)</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Plenty of drinking water and food for an extra day</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> First aid kit, torch, and the Emergency+ app</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Tyre gauge, compressor and tyre repair kit</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Rubbish bags: take everything out with you</li>
+          </ul>
+        </div>
+        <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+          <h3 class="font-bold text-stone-900 text-lg mb-3"><i class="fa-solid fa-link text-brand-ochre mr-2" aria-hidden="true"></i>Recovery Basics</h3>
+          <ul class="text-sm text-stone-600 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Use rated recovery points only, never a tow ball</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Carry a snatch strap, rated soft shackles and a damper</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Clear everyone well away before any recovery</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Lower tyre pressures for sand, and re-inflate after</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> If it's flooded, forget it. Never drive into floodwater</li>
+            <li><i class="fa-solid fa-check text-brand-ochre mr-1.5" aria-hidden="true"></i> Croc country: don't wade crossings, and keep back from the water's edge</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- EXTERNAL RELEVANT LINKS DIRECTORY -->
   <section id="resources" class="py-20 bg-stone-100 border-t border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="text-brand-ochre font-bold text-sm tracking-wider uppercase">Online Directory</span>
-        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Essential 4WD & Regional Websites</h2>
-        <p class="text-stone-600 mt-3 text-base">Direct links to our governing association, emergency alerts, national parks, and local regional resources.</p>
+        <span class="text-brand-ochre font-bold text-sm tracking-wider uppercase">Before You Go</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Members' Useful Links</h2>
+        <p class="text-stone-600 mt-3 text-base">Our governing association, road and weather conditions, parks and permits, emergency info, and local resources. Got a link other members would find handy? <a href="#contact" class="text-brand-ochre font-semibold hover:underline">Send it in</a> and we'll add it.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -495,7 +636,7 @@
         <!-- Category: 4WD QLD & Fellow Clubs -->
         <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
           <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-ochre flex items-center justify-center mb-4">
-            <i class="fa-solid fa-sitemap text-lg"></i>
+            <i class="fa-solid fa-sitemap text-lg" aria-hidden="true"></i>
           </div>
           <h3 class="font-bold text-stone-900 text-lg mb-1">Affiliation & Clubs</h3>
           <p class="text-xs text-stone-500 mb-4">State bodies and sister clubs across regional Queensland.</p>
@@ -503,23 +644,24 @@
             <li>
               <a href="https://www.4wdqld.com.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>4WD Queensland</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Peak association & insurance</span>
             </li>
             <li>
               <a href="https://www.4wdqld.com.au/clubs/" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>4WD QLD Club Directory</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Clubs from Cape to Border</span>
             </li>
             <li>
-              <a href="https://www.facebook.com/mackaydistrict4wdclub/" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
-                <span>Mackay & District 4WD Club</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+              <!-- Previously linked to the Mackay District 4WD Club Facebook page (wrong club). No official Burdekin District 4WD Club Facebook page could be verified. Add it here once confirmed. -->
+              <a href="https://www.4wdqld.com.au/find-a-club/" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Find a 4WD QLD Club</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
-              <span class="text-xs text-stone-500 block">Regional club partners (MAD)</span>
+              <span class="text-xs text-stone-500 block">4WD Queensland's official club finder</span>
             </li>
           </ul>
         </div>
@@ -527,7 +669,7 @@
         <!-- Category: Roads, Weather & Emergencies -->
         <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
           <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center mb-4">
-            <i class="fa-solid fa-cloud-bolt text-lg"></i>
+            <i class="fa-solid fa-cloud-bolt text-lg" aria-hidden="true"></i>
           </div>
           <h3 class="font-bold text-stone-900 text-lg mb-1">Roads & Weather</h3>
           <p class="text-xs text-stone-500 mb-4">Track conditions, closures, and meteorological radars.</p>
@@ -535,21 +677,21 @@
             <li>
               <a href="https://qldtraffic.qld.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>QLDTraffic (Road Conditions)</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Flood closures & live road status</span>
             </li>
             <li>
-              <a href="http://www.bom.gov.au/qld/forecasts/townsville.shtml" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
-                <span>BOM Townsville / Burdekin</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+              <a href="https://www.bom.gov.au/location/australia/queensland/herbert-and-lower-burdekin/bqld_pt002-ayr" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>BOM Forecast: Ayr</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">District forecasts & severe warnings</span>
             </li>
             <li>
-              <a href="http://www.bom.gov.au/products/IDR732.loop.shtml" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+              <a href="https://www.bom.gov.au/products/IDR732.loop.shtml" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>BOM Radar (Hervey Range)</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Live rain radar Townsville/Ayr</span>
             </li>
@@ -559,31 +701,32 @@
         <!-- Category: National Parks & Permits -->
         <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
           <div class="w-10 h-10 rounded-xl bg-emerald-100 text-brand-bush flex items-center justify-center mb-4">
-            <i class="fa-solid fa-campground text-lg"></i>
+            <i class="fa-solid fa-campground text-lg" aria-hidden="true"></i>
           </div>
           <h3 class="font-bold text-stone-900 text-lg mb-1">Parks & Permits</h3>
           <p class="text-xs text-stone-500 mb-4">Official campsite bookings and park alerts.</p>
           <ul class="space-y-3 text-sm">
             <li>
-              <a href="https://parks.des.qld.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
-                <span>Queensland National Parks</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+              <a href="https://parks.qld.gov.au/park-alerts" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Queensland Park Alerts</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
-              <span class="text-xs text-stone-500 block">Park guides & track alerts</span>
+              <span class="text-xs text-stone-500 block">Closures, track & access conditions</span>
             </li>
             <li>
-              <a href="https://qpws.service.qld.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
-                <span>QPWS Camping Bookings</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+              <a href="https://parks.qld.gov.au/camping/bookings" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Camping Permits & Bookings</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Paluma, Bowling Green Bay & more</span>
             </li>
             <li>
-              <a href="https://treadlightlyaustralia.com.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
-                <span>Tread Lightly! Australia</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+              <!-- Tread Lightly! Australia (treadlightlyaustralia.com.au) removed: the site no longer responds. -->
+              <a href="https://parks.des.qld.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Queensland National Parks</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
-              <span class="text-xs text-stone-500 block">Responsible off-road code</span>
+              <span class="text-xs text-stone-500 block">Park guides & vehicle access permits</span>
             </li>
           </ul>
         </div>
@@ -591,7 +734,7 @@
         <!-- Category: Burdekin Local & Council -->
         <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
           <div class="w-10 h-10 rounded-xl bg-stone-100 text-stone-700 flex items-center justify-center mb-4">
-            <i class="fa-solid fa-landmark text-lg"></i>
+            <i class="fa-solid fa-landmark text-lg" aria-hidden="true"></i>
           </div>
           <h3 class="font-bold text-stone-900 text-lg mb-1">Burdekin Community</h3>
           <p class="text-xs text-stone-500 mb-4">Local government, venues, and visitor services.</p>
@@ -599,27 +742,99 @@
             <li>
               <a href="https://www.burdekin.qld.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>Burdekin Shire Council</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Local roadworks, parks & permits</span>
             </li>
             <li>
               <a href="https://www.visitburdekin.com.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>Visit Burdekin Tourism</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Groper Creek, Alva Beach & Ayr</span>
             </li>
             <li>
-              <a href="https://www.facebook.com/burdekinneighbourhoodcentre/" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+              <a href="https://thebnc.org.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
                 <span>Burdekin Neighbourhood Centre</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
               </a>
               <span class="text-xs text-stone-500 block">Our monthly meeting venue</span>
             </li>
           </ul>
         </div>
 
+      </div>
+
+      <!-- EMERGENCY & SAFETY + MEMBER-SUGGESTED LINKS -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+        <div class="bg-red-50 rounded-2xl p-6 border border-red-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-kit-medical text-lg" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg mb-1">Emergency & Safety</h3>
+          <p class="text-sm text-red-900 mb-4"><strong>In an emergency call Triple Zero (000).</strong> From a mobile with no coverage on your own network, 000 calls can still be carried by other networks; 112 also works from mobiles. For flood or storm help, call the SES on 132 500.</p>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="https://www.emergencyplus.com.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Emergency+ App</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
+              </a>
+              <span class="text-xs text-stone-500 block">Free app that shows your GPS location to read out to 000</span>
+            </li>
+            <li>
+              <a href="https://www.triplezero.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Triple Zero (000) Advice</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
+              </a>
+              <span class="text-xs text-stone-500 block">When and how to call 000</span>
+            </li>
+            <li>
+              <a href="https://www.bom.gov.au/weather-and-climate/warnings-and-alerts" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>BOM Warnings & Alerts</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
+              </a>
+              <span class="text-xs text-stone-500 block">Severe weather, flood and cyclone warnings</span>
+            </li>
+            <li>
+              <a href="https://www.disaster.qld.gov.au/" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Queensland Disaster Information</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
+              </a>
+              <span class="text-xs text-stone-500 block">Current disasters, alerts and getting ready</span>
+            </li>
+            <li>
+              <a href="https://www.fire.qld.gov.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Queensland Fire Department</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
+              </a>
+              <span class="text-xs text-stone-500 block">Bushfire warnings and fire bans before you light a campfire</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-dashed border-stone-300 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-thumbs-up text-lg" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg mb-1">Suggested by Members</h3>
+          <p class="text-xs text-stone-500 mb-4">Handy sites recommended by club members. Have one to add? Send it via the contact form below.</p>
+          <!--
+            HOW TO ADD A MEMBER LINK: copy the <li> template below, paste it inside the list,
+            and change the web address, the link name, and the short description.
+            Delete the "[To be confirmed]" placeholder entry once a real link is added.
+
+            <li>
+              <a href="https://example.com.au" target="_blank" rel="noopener noreferrer" class="text-brand-ochre hover:underline font-semibold flex items-center justify-between">
+                <span>Link name</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-stone-400" aria-hidden="true"></i>
+              </a>
+              <span class="text-xs text-stone-500 block">Short description (suggested by ...)</span>
+            </li>
+          -->
+          <ul id="memberLinks" class="space-y-3 text-sm">
+            <li class="text-stone-500 italic">[To be confirmed] Members' link suggestions will appear here.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -633,40 +848,40 @@
           <span class="text-brand-ochre font-bold text-sm tracking-wider uppercase">Club Membership</span>
           <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900">Affordable Dues, Covered by 4WD QLD</h2>
           <p class="text-stone-600 leading-relaxed text-base">
-            Annual membership covers individual and family participation, club insurance, and affiliation fees through Four Wheel Drive Queensland[cite: 1, 4]. Fees are due annually prior to 30 June[cite: 1, 4].
+            Annual membership covers individual and family participation, club insurance, and affiliation fees through Four Wheel Drive Queensland. Fees are due annually prior to 30 June.
           </p>
 
           <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 space-y-4">
             <h3 class="font-bold text-stone-900 text-lg flex items-center gap-2">
-              <i class="fa-solid fa-building-columns text-brand-ochre"></i> Electronic Payment Details
+              <i class="fa-solid fa-building-columns text-brand-ochre" aria-hidden="true"></i> Electronic Payment Details
             </h3>
-            <p class="text-xs text-stone-500">Payments are made securely via Electronic Funds Transfer (Direct Deposit)[cite: 1, 4]:</p>
+            <p class="text-xs text-stone-500">Payments are made securely via Electronic Funds Transfer (Direct Deposit):</p>
             <div class="grid grid-cols-2 gap-4 text-sm font-mono bg-white p-4 rounded-xl border border-stone-200">
               <div>
                 <span class="text-xs uppercase text-stone-400 font-sans block">Bank</span>
-                <span class="font-bold text-stone-800">Bendigo Bank[cite: 5, 7]</span>
+                <span class="font-bold text-stone-800">Bendigo Bank</span>
               </div>
               <div>
                 <span class="text-xs uppercase text-stone-400 font-sans block">BSB</span>
-                <span class="font-bold text-stone-800">633-000[cite: 5, 7]</span>
+                <span class="font-bold text-stone-800">633-000</span>
               </div>
               <div>
                 <span class="text-xs uppercase text-stone-400 font-sans block">Account No.</span>
-                <span class="font-bold text-stone-800">114275589[cite: 5, 7]</span>
+                <span class="font-bold text-stone-800">114275589</span>
               </div>
               <div>
                 <span class="text-xs uppercase text-stone-400 font-sans block">Account Name</span>
-                <span class="font-bold text-stone-800 text-xs">Burdekin District 4WD Club Inc.[cite: 5, 7]</span>
+                <span class="font-bold text-stone-800 text-xs">Burdekin District 4WD Club Inc.</span>
               </div>
             </div>
-            <p class="text-xs text-stone-500 italic">Reference: Please use your Surname + "Mship" so our treasurer can identify your deposit[cite: 1, 9].</p>
+            <p class="text-xs text-stone-500 italic">Reference: Please use your Surname + "Mship" so our treasurer can identify your deposit.</p>
           </div>
         </div>
 
         <!-- Calculator Widget -->
         <div class="lg:col-span-6 bg-stone-900 text-white rounded-3xl p-8 shadow-xl">
           <h3 class="font-display text-2xl font-bold mb-2">Membership Fee Estimator</h3>
-          <p class="text-stone-400 text-sm mb-6">Calculate annual club dues and mandatory 4WD Queensland capitation insurance[cite: 1, 4].</p>
+          <p class="text-stone-400 text-sm mb-6">Calculate annual club dues and mandatory 4WD Queensland capitation insurance.</p>
 
           <div class="space-y-5">
             <div>
@@ -685,7 +900,7 @@
               <label class="flex items-center gap-3 cursor-pointer">
                 <input type="checkbox" id="chkOtherClub" class="w-5 h-5 rounded accent-orange-500">
                 <span class="text-xs text-stone-300">
-                  Already paid 4WD QLD fee through another affiliated club? ($30 exemption)[cite: 1]
+                  Already paid 4WD QLD fee through another affiliated club? ($30 exemption)
                 </span>
               </label>
             </div>
@@ -715,36 +930,33 @@
     </div>
   </section>
 
-  <!-- CLOUDFARE-POWERED CONTACT & RSVP SECTION -->
+  <!-- CONTACT & RSVP SECTION -->
   <section id="contact" class="py-20 bg-stone-50 border-t border-stone-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-orange-700 bg-orange-100 px-3 py-1 rounded-full mb-2">
-          <i class="fa-solid fa-bolt"></i> Cloudflare Pages & Workers Native
-        </div>
         <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900">Get in Touch with the Club</h2>
         <p class="text-stone-600 mt-2 text-base">Inquire about joining, RSVP for the next monthly meeting, or ask about upcoming trips.</p>
       </div>
 
       <div class="bg-white rounded-3xl p-8 sm:p-10 border border-stone-200 shadow-sm relative">
         
-        <!-- Live Form -->
+        <!-- Contact form. On GitHub Pages there is no server, so submitting opens the visitor's email app with the message filled in. -->
         <form id="clubContactForm" class="space-y-6">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label for="senderName" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name *</label>
-              <input type="text" id="senderName" name="name" required placeholder="Gary Mallett" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-ochre text-sm">
+              <input type="text" id="senderName" name="name" required placeholder="Your name" autocomplete="name" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-ochre text-sm">
             </div>
             <div>
               <label for="senderEmail" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Email *</label>
-              <input type="email" id="senderEmail" name="email" required placeholder="you@domain.com.au" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-ochre text-sm">
+              <input type="email" id="senderEmail" name="email" required placeholder="you@domain.com.au" autocomplete="email" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-ochre text-sm">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label for="senderPhone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
-              <input type="tel" id="senderPhone" name="phone" placeholder="0400 000 000" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-ochre text-sm">
+              <input type="tel" id="senderPhone" name="phone" placeholder="0400 000 000" autocomplete="tel" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-ochre text-sm">
             </div>
             <div>
               <label for="subjectSelect" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Inquiry Type</label>
@@ -764,25 +976,26 @@
 
           <!-- Hidden Honeypot for Spam Prevention -->
           <div class="hidden">
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
           </div>
 
           <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-brand-ochre hover:bg-brand-ochredark text-white font-bold text-sm tracking-wider uppercase transition flex items-center justify-center gap-2 shadow-md shadow-orange-950/20">
-            <span id="btnText">Send Inquiry to Secretary</span>
-            <i class="fa-solid fa-paper-plane text-xs"></i>
+            <span id="btnText">Email the Secretary</span>
+            <i class="fa-solid fa-paper-plane text-xs" aria-hidden="true"></i>
           </button>
         </form>
 
         <!-- Response Status Box -->
         <div id="formStatus" class="hidden mt-6 p-4 rounded-xl text-sm font-medium"></div>
 
-        <!-- Cloudflare Architecture Guide Note -->
+        <!-- GARY TO CONFIRM: is suebrett@schreibers.net.au still the right secretary/club inbox?
+             It is used here and in the CLUB_CONTACT_EMAIL constant in the script at the bottom of this file. -->
         <div class="mt-8 pt-6 border-t border-stone-100 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-stone-500 gap-3">
           <div class="flex items-center gap-2">
-            <i class="fa-brands fa-cloudflare text-orange-500 text-base"></i>
-            <span>Hosted seamlessly via <strong>Cloudflare Pages</strong> & <strong>Pages Functions</strong></span>
+            <i class="fa-solid fa-envelope text-brand-ochre text-base" aria-hidden="true"></i>
+            <span>Pressing the button opens your email app with your message ready to send.</span>
           </div>
-          <span class="text-stone-400">Dispatches direct to Secretary &bull; suebrett@schreibers.net.au[cite: 1, 4]</span>
+          <span class="text-stone-400">Club Secretary &bull; <a href="mailto:suebrett@schreibers.net.au" class="underline">suebrett@schreibers.net.au</a></span>
         </div>
 
       </div>
@@ -796,7 +1009,7 @@
         <div>
           <span class="font-display font-bold text-white text-lg block mb-2">Burdekin District 4WD Club Inc.</span>
           <p class="text-xs text-stone-400 leading-relaxed">
-            Incorporated in Queensland (IA17459)[cite: 16]. Proudly affiliated with Four Wheel Drive Queensland[cite: 1, 4]. Promoting safe, responsible four-wheel driving and community fellowship.
+            Incorporated in Queensland (IA17459). Proudly affiliated with Four Wheel Drive Queensland. Promoting safe, responsible four-wheel driving and community fellowship.
           </p>
         </div>
         <div>
@@ -804,17 +1017,24 @@
           <p class="text-xs text-stone-400 leading-relaxed">
             PO Box 2323<br>
             Ayr QLD 4807<br>
-            Australia[cite: 1]
+            Australia
           </p>
         </div>
         <div>
           <span class="font-bold text-white text-sm block mb-2">Meeting Location</span>
           <p class="text-xs text-stone-400 leading-relaxed">
-            Sandhill’s Room, Burdekin Neighbourhood Centre[cite: 16]<br>
-            40 Chippendale Street, Ayr QLD[cite: 1, 16]<br>
-            First Tuesday of the month at 7:30 PM[cite: 1]
+            Sandhill’s Room, Burdekin Neighbourhood Centre<br>
+            40 Chippendale Street, Ayr QLD<br>
+            First Tuesday of the month at 7:30 PM
           </p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Burdekin+Neighbourhood+Centre+40+Chippendale+St+Ayr+QLD+4807" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-3 text-xs font-semibold text-orange-400 hover:underline">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Open in Google Maps
+          </a>
         </div>
+      </div>
+      <!-- Meeting place map -->
+      <div class="py-8 border-b border-stone-800">
+        <iframe title="Map: Burdekin Neighbourhood Centre, 40 Chippendale St, Ayr QLD 4807" src="https://maps.google.com/maps?q=Burdekin+Neighbourhood+Centre,+40+Chippendale+St,+Ayr+QLD+4807&amp;output=embed" class="w-full h-64 rounded-xl border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-2">
         <p>&copy; <span id="currentYear"></span> Burdekin District 4 Wheel Drive Club Inc. All rights reserved.</p>
@@ -824,10 +1044,10 @@
   </footer>
 
   <!-- MODAL: TRIP DETAILS -->
-  <div id="tripModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+  <div id="tripModal" role="dialog" aria-modal="true" aria-label="Trip itinerary details" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 relative shadow-2xl overflow-y-auto max-h-[90vh]">
       <button onclick="closeTripModal()" aria-label="Close Modal" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-700 flex items-center justify-center">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
       </button>
       <div id="modalContent"></div>
     </div>
@@ -835,6 +1055,24 @@
 
   <!-- JAVASCRIPT LOGIC -->
   <script>
+    /* =====================================================================
+       EASY-TO-EDIT SETTINGS: change these in one place
+       ===================================================================== */
+    const CLUB_CONTACT_EMAIL = 'suebrett@schreibers.net.au'; // GARY TO CONFIRM: secretary / club inbox
+    const PHOTO_EMAIL        = 'gazwmallett@gmail.com';      // where members email trip photos
+    const PHOTO_SMS_DISPLAY  = '0433 055 683';               // number shown on the site for texting photos
+    const PHOTO_SMS_LINK     = '+61433055683';               // same number in international format (for the sms: link)
+
+    /* TRIP PHOTOS: add one line per photo. Put the image file in the photos/ folder
+       (see photos/README.md). Leave src empty ('') to show a placeholder tile.
+       Example: { src: 'photos/2026-04-deep-creek-damper.jpg', caption: 'Damper cook-off', trip: 'Deep Creek Easter', date: 'April 2026' }, */
+    const TRIP_PHOTOS = [
+      { src: '', caption: '[Photo to come: add your first trip photo]', trip: '[Trip name]', date: '[Date]' },
+      { src: '', caption: '[Photo to come: camp oven cook-up]',         trip: '[Trip name]', date: '[Date]' },
+      { src: '', caption: '[Photo to come: on the track]',              trip: '[Trip name]', date: '[Date]' },
+    ];
+    /* ===================================================================== */
+
     // Set Year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 
@@ -842,8 +1080,95 @@
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      const nowHidden = mobileMenu.classList.toggle('hidden');
+      mobileBtn.setAttribute('aria-expanded', String(!nowHidden));
     });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileBtn.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Next general meeting: first Tuesday of the month (computed, Brisbane time)
+    (function () {
+      const el = document.getElementById('nextMeetingDate');
+      if (!el) return;
+      const nowBne = new Date(Date.now() + (new Date().getTimezoneOffset() + 600) * 60000); // AEST, no daylight saving
+      function firstTuesday(y, m) { const d = new Date(y, m, 1); d.setDate(1 + ((2 - d.getDay() + 7) % 7)); return d; }
+      let ft = firstTuesday(nowBne.getFullYear(), nowBne.getMonth());
+      const today = new Date(nowBne.getFullYear(), nowBne.getMonth(), nowBne.getDate());
+      if (ft < today) ft = firstTuesday(nowBne.getFullYear(), nowBne.getMonth() + 1);
+      el.textContent = ft.toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    })();
+
+    // Sun & Moon for Ayr (approximate, calculated locally; NOAA-style solar equations)
+    (function () {
+      const LAT = -19.57, LON = 147.40, TZ = 10; // Ayr, AEST (UTC+10, no daylight saving)
+      const rad = Math.PI / 180;
+      const nowBne = new Date(Date.now() + (new Date().getTimezoneOffset() + TZ * 60) * 60000);
+      const y = nowBne.getFullYear(), m = nowBne.getMonth(), d = nowBne.getDate();
+      const dayOfYear = Math.floor((Date.UTC(y, m, d) - Date.UTC(y, 0, 0)) / 86400000);
+
+      function sunTime(isRise) {
+        const g = 2 * Math.PI / 365 * (dayOfYear - 1 + (12 - 12) / 24);
+        const eqt = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g));
+        const decl = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g) - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g) - 0.002697 * Math.cos(3 * g) + 0.00148 * Math.sin(3 * g);
+        const cosH = Math.cos(90.833 * rad) / (Math.cos(LAT * rad) * Math.cos(decl)) - Math.tan(LAT * rad) * Math.tan(decl);
+        const ha = Math.acos(Math.min(1, Math.max(-1, cosH))) / rad;
+        const utcMin = 720 - 4 * (LON + (isRise ? ha : -ha)) - eqt;
+        return utcMin + TZ * 60;
+      }
+      function fmt(min) {
+        min = Math.round(min);
+        let h = Math.floor(min / 60), mm = min % 60, ap = h >= 12 ? 'PM' : 'AM';
+        h = h % 12 || 12;
+        return h + ':' + String(mm).padStart(2, '0') + ' ' + ap;
+      }
+      const sr = document.getElementById('sunriseTime'), ss = document.getElementById('sunsetTime');
+      if (sr) sr.textContent = fmt(sunTime(true));
+      if (ss) ss.textContent = fmt(sunTime(false));
+
+      // Moon phase from a known new moon (6 Jan 2000 18:14 UTC), synodic month 29.530588853 days
+      const synodic = 29.530588853;
+      const age = (((Date.now() - Date.UTC(2000, 0, 6, 18, 14)) / 86400000) % synodic + synodic) % synodic;
+      const illum = Math.round((1 - Math.cos(2 * Math.PI * age / synodic)) / 2 * 100);
+      // Southern hemisphere view: waxing crescent appears lit on the left
+      const phases = [
+        [1.84566, 'New Moon', '\u{1F311}'], [5.53699, 'Waxing Crescent', '\u{1F318}'], [9.22831, 'First Quarter', '\u{1F317}'],
+        [12.91963, 'Waxing Gibbous', '\u{1F316}'], [16.61096, 'Full Moon', '\u{1F315}'], [20.30228, 'Waning Gibbous', '\u{1F314}'],
+        [23.99361, 'Last Quarter', '\u{1F313}'], [27.68493, 'Waning Crescent', '\u{1F312}'], [synodic + 1, 'New Moon', '\u{1F311}']
+      ];
+      const p = phases.find(ph => age < ph[0]);
+      const nameEl = document.getElementById('moonName'), iconEl = document.getElementById('moonIcon'), detEl = document.getElementById('moonDetail');
+      if (nameEl) nameEl.textContent = p[1];
+      if (iconEl) iconEl.textContent = p[2];
+      const daysToFull = ((14.765 - age) % synodic + synodic) % synodic;
+      const daysToNew = synodic - age;
+      const dd = n => { n = Math.round(n); return n <= 0 ? 'today' : n === 1 ? 'in ~1 day' : `in ~${n} days`; };
+      if (detEl) detEl.textContent = `About ${illum}% lit. Full moon ${dd(daysToFull)}, new moon ${dd(daysToNew)}.`;
+    })();
+
+    // Trip Photos gallery
+    (function () {
+      const grid = document.getElementById('photoGrid');
+      if (!grid) return;
+      const esc = t => String(t || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      grid.innerHTML = TRIP_PHOTOS.map(ph => {
+        const meta = [ph.trip, ph.date].filter(Boolean).map(esc).join(' &bull; ');
+        const media = ph.src
+          ? `<a href="${esc(ph.src)}" target="_blank" rel="noopener"><img src="${esc(ph.src)}" alt="${esc(ph.caption)}${ph.trip ? ' (' + esc(ph.trip) + ')' : ''}" loading="lazy" class="w-full h-56 object-cover"></a>`
+          : `<div class="w-full h-56 bg-stone-200 flex flex-col items-center justify-center text-stone-500 border-b border-dashed border-stone-300"><i class="fa-regular fa-image text-4xl mb-2" aria-hidden="true"></i><span class="text-xs font-semibold uppercase tracking-wider">Photo placeholder</span></div>`;
+        return `<figure class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm">${media}<figcaption class="p-4"><p class="text-sm font-semibold text-stone-900">${esc(ph.caption)}</p><p class="text-xs text-stone-500 mt-1">${meta}</p></figcaption></figure>`;
+      }).join('');
+
+      const emailLink = document.getElementById('photoEmailLink');
+      if (emailLink) {
+        const body = 'Trip name:\nDate:\nWho is in the photos:\n\nEveryone pictured is happy for these to go on the club website: yes / no\n';
+        emailLink.href = `mailto:${PHOTO_EMAIL}?subject=${encodeURIComponent('Trip photos: [trip name]')}&body=${encodeURIComponent(body)}`;
+      }
+      const smsLink = document.getElementById('photoSmsLink'), smsNum = document.getElementById('photoSmsNumber');
+      if (smsLink) smsLink.href = `sms:${PHOTO_SMS_LINK}`;
+      if (smsNum) smsNum.textContent = PHOTO_SMS_DISPLAY;
+    })();
 
     // Fishing Almanac Species Filter
     const filterButtons = document.querySelectorAll('.species-btn');
@@ -980,60 +1305,28 @@
       document.getElementById('tripModal').classList.add('hidden');
     }
 
-    // Cloudflare Form Handling (Pages Function / API Endpoint)
+    // Contact form: GitHub Pages has no server, so open the visitor's email app with the details filled in.
     const form = document.getElementById('clubContactForm');
     const formStatus = document.getElementById('formStatus');
-    const submitBtn = document.getElementById('submitBtn');
-    const btnText = document.getElementById('btnText');
 
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
-      
-      // Update Button State
-      btnText.textContent = "Sending via Cloudflare...";
-      submitBtn.disabled = true;
-      submitBtn.classList.add('opacity-75');
-
-      const formData = {
-        name: document.getElementById('senderName').value,
-        email: document.getElementById('senderEmail').value,
-        phone: document.getElementById('senderPhone').value,
-        subject: document.getElementById('subjectSelect').value,
-        message: document.getElementById('senderMessage').value
-      };
-
-      try {
-        /*
-          Dispatches to Cloudflare Pages Function at `/api/contact`.
-          If deployed without an active backend yet, it falls back to a graceful simulation
-          and provides a direct mailto action so inquiries are never lost.
-        */
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
-        });
-
-        if (response.ok) {
-          formStatus.className = "mt-6 p-4 rounded-xl text-sm font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 block";
-          formStatus.innerHTML = `<strong>Thank you!</strong> Your message has been received and forwarded to the Burdekin District 4WD Club executive committee.`;
-          form.reset();
-        } else {
-          throw new Error('API not available');
-        }
-      } catch (err) {
-        // Graceful Client-side Fallback
-        formStatus.className = "mt-6 p-4 rounded-xl text-sm font-medium bg-amber-50 text-amber-900 border border-amber-200 block";
-        formStatus.innerHTML = `
-          <strong>Notice:</strong> Direct email endpoint initialized. You can also send this inquiry directly to 
-          <a href="mailto:suebrett@schreibers.net.au?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent('From: ' + formData.name + '\nPhone: ' + formData.phone + '\n\n' + formData.message)}" class="underline font-bold text-brand-ochre">suebrett@schreibers.net.au</a>.
-        `;
-      } finally {
-        btnText.textContent = "Send Inquiry to Secretary";
-        submitBtn.disabled = false;
-        submitBtn.classList.remove('opacity-75');
-      }
+      if (form.querySelector('[name="_gotcha"]').value) return; // spam trap
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const phone = document.getElementById('senderPhone').value;
+      const subject = document.getElementById('subjectSelect').value;
+      const message = document.getElementById('senderMessage').value;
+      const body = `From: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`;
+      const href = `mailto:${CLUB_CONTACT_EMAIL}?subject=${encodeURIComponent(subject + ' - Burdekin 4WD Club website')}&body=${encodeURIComponent(body)}`;
+      formStatus.className = "mt-6 p-4 rounded-xl text-sm font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 block";
+      formStatus.innerHTML = `Your email app should now open with your message ready to send. If it doesn't, please email <a href="mailto:${CLUB_CONTACT_EMAIL}" class="underline font-bold text-brand-ochre">${CLUB_CONTACT_EMAIL}</a> directly.`;
+      window.location.href = href;
     });
+
+    // Close trip modal with Escape or by clicking the dark backdrop
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeTripModal(); });
+    document.getElementById('tripModal').addEventListener('click', e => { if (e.target.id === 'tripModal') closeTripModal(); });
   </script>
 </body>
 </html>
